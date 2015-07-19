@@ -1,0 +1,343 @@
+/* basics
+==================================================*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url(/images/background.png) repeat;
+	font: 20px 'fira sans', arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+
+/* header
+==================================================*/
+.header-wrapper {
+	background-color: #eff3f7;
+	background-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: 100% 3px;
+}
+
+.header {
+	height: 111px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header-logo {
+	display: block;
+	height: 42px;
+	margin: auto 0;
+}
+
+.social-wrapper {
+	height: 47px;
+	width: 300px;
+	margin: auto 0;
+}
+
+.social {
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+}
+
+.sprite {
+	background-image: url(/images/spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+	transition: all .1s;
+}
+
+.sprite-vk {
+	width: 47px;
+	height: 47px;
+	background-position: -155px -104px;
+}
+
+.sprite-vk:hover {
+	width: 47px;
+	height: 47px;
+	background-position: -95px -155px;
+}
+
+.sprite-tw {
+	width: 47px;
+	height: 47px;
+	background-position: -148px -2px;
+}
+
+.sprite-tw:hover {
+	width: 47px;
+	height: 47px;
+	background-position: -155px -53px;
+}
+
+.sprite-fb {
+	width: 47px;
+	height: 47px;
+	background-position: -97px -22px;
+}
+
+.sprite-fb:hover {
+	width: 47px;
+	height: 47px;
+	background-position: -2px -73px;
+}
+
+.sprite-git {
+	width: 47px;
+	height: 47px;
+	background-position: -53px -73px;
+}
+
+.sprite-git:hover {
+	width: 47px;
+	height: 47px;
+	background-position: -104px -73px;
+}
+
+
+/* main-wrapper 2313213
+==================================================*/
+.main-wrapper {
+	width: 960px;
+	margin: 50px auto;
+}
+
+
+/* sidebar
+==================================================*/
+.sidebar {
+	width: 250px;
+}
+
+.nav, .contacts {
+	border-radius: 5px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.nav-item {
+	height: 73px;
+	padding: 0 20px;
+	background-color: #eff3f7;
+	background-image: linear-gradient(to right, #3ba8c0, #3ba8c0);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: 90% 2px;
+	font-size: 21px;
+	line-height: 73px;
+}
+
+.nav-item:first-child {
+	background-image: none;
+}
+
+.nav-item-link {
+	color: #959aa8;
+	transition: color .5s;
+}
+
+.nav-item.active {
+	background-color: #3ba8c0;
+}
+
+.nav-item-link.active {
+	color: #fff;
+}
+
+.nav-item-link:hover {
+	color: #3ba8c0;
+}
+
+
+.email, .phone, .skype {
+	height: 40px;
+}
+.contacts-heading {
+	background-color: #3ba8c0;
+}
+.email {
+	background-color: #41b9d4;
+}
+.phone {
+	background-color: #48cbe8;
+}
+.skype {
+	background-color: #51daf8;
+}
+
+
+/*cursor: pointer;*/
+
+/* main
+==================================================*/
+.main {
+	width: 650px;
+}
+
+
+.info-block, .experience, .education {
+	width: 650px;
+	background: #eff3f7;
+	padding-bottom: 49px;
+	margin-bottom: 26px;
+	border-radius: 5px;
+}
+
+
+.main-content h2 {
+	display: inline;
+	font-size: 26px;
+	font-weight: normal;
+	color: #3ba8c0;
+	line-height: 65px;
+	/* margin-bottom: 8px; */
+	padding: 20px 21px;
+	border-bottom: 2px solid #3ba8c0;
+}
+
+
+.description {
+	margin-top: 25px;
+}
+
+.description p {
+	font-size: 18px;
+	color: #000;
+	opacity: .8;
+}
+.description p:after {
+	content: '';
+	visibility: hidden;
+	clear: both;
+}
+
+.span {
+	font-size: 16px;
+	opacity: .8;
+}
+
+
+/* footer
+==================================================*/
+.site-wrapper {
+	min-height: 100%;
+	margin-bottom: -78px;
+}
+
+.site-wrapper:after {
+	min-height: 78px;
+	content: ' ';
+	display: block;
+}
+
+.footer-wrapper {
+	background-color: #eff3f7;
+	background-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: 100% 3px;
+}
+
+.footer {
+	height: 78px;
+
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.sprite-login {
+	width: 20px;
+	height: 32px;
+	background-position: -47px -124px;
+}
+
+.sprite-login:hover {
+	width: 20px;
+	height: 32px;
+	background-position: -71px -124px;
+}
+
+.copyright {
+	margin-right: 244px;
+	font-size: 14px;
+}
+
+
+/* horisontal positioning. cf - clearfix
+==================================================*/
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+
+/* sprites
+==================================================*/
+.sprite-bag {
+	width: 36px;
+	height: 34px;
+	background-position: -2px -2px;
+}
+
+.sprite-email {
+	width: 21px;
+	height: 16px;
+	background-position: -97px -2px;
+}
+
+.sprite-phone {
+	width: 21px;
+	height: 20px;
+	background-position: -42px -2px;
+}
+
+.sprite-skype {
+	width: 20px;
+	height: 20px;
+	background-position: -95px -124px;
+}
+
+.sprite-doc {
+	width: 26px;
+	height: 32px;
+	background-position: -67px -2px;
+}
+
+.sprite-hat {
+	width: 41px;
+	height: 23px;
+	background-position: -2px -124px;
+}
