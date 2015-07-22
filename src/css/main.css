@@ -20,8 +20,7 @@ li {
 
 
 /* fonts: fira famyly
-========================================
- */
+======================================== */
 @font-face {
 	font-family: 'fira-sanslight';
 	src: url('/fonts/site-fonts/firasans-light.eot');
@@ -54,8 +53,7 @@ li {
 
 
 /* fonts: proxoma_nova_cond
-========================================
- */
+======================================== */
 @font-face {
 	font-family: 'ProximaNovaCond-Semibold';
 	src: url('/fonts/site-fonts/ProximaNovaCond-Semibold.eot');
@@ -426,7 +424,7 @@ li {
 	background-repeat: no-repeat;
 	background-position: -2px -124px;
 	top: 8px;
-	left: -60px;
+	left: -65px;
 }
 
 
@@ -481,7 +479,6 @@ li {
 	padding-left: 35px;
 	line-height: 2.2;
 	color: #687078;
-
 }
 
 .copyright {
@@ -509,25 +506,4 @@ li {
 
 .cf:after {
 	clear: both;
-}
-
-
-/* sprites
-==================================================*/
-.sprite-bag {
-	width: 36px;
-	height: 34px;
-	background-position: -2px -2px;
-}
-
-.sprite-doc {
-	width: 26px;
-	height: 32px;
-	background-position: -67px -2px;
-}
-
-.sprite-hat {
-	width: 41px;
-	height: 23px;
-	background-position: -2px -124px;
 }

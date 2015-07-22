@@ -9,65 +9,84 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="./images/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/favicon/favicon.ico" />
 	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-	<link rel="stylesheet" href="./css/main.css">
-	<script src="bower/modernizr.js"></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="bower/modernizr/modernizr.js"></script>
 </head>
 
 <body>
 <!-- [if lt IE 8]>
 <p class="browserhappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com">обновите</a> его.</p>
 <![endif] -->
-	<div class="site-wrapper">
+	<div class="page-wrapper">
+		<!-- start of header -->
 		<div class="header-wrapper">
-			<header class="header cf">
-				<a href="http://loftschool.com/course/web-development" target="blank" class="header-logo pull-left"><img class="logo" src="./images/logo.png" alt="Loftschool.com"></a>
-				<ul class="social-wrapper pull-right">
-					<li class="social"><a href="https://vk.com/" target="blank" class="sprite sprite-vk"></a></li>
-					<li class="social"><a href="https://twitter.com/" target="blank" class="sprite sprite-tw"></a></li>
-					<li class="social"><a href="https://facebook.com/" target="blank" class="sprite sprite-fb"></a></li>
-					<li class="social"><a href="https://github.com/" target="blank" class="sprite sprite-git"></a></li>
+			<header class="header">
+				<a href="http://loftschool.com/course/web-development" target="blank" class="header-logo">
+					<img class="logo" src="images/logo.png" alt="Loftschool.com">
+					<span class="header-logo-text">Сайт портфолио</span>
+				</a>
+				<ul class="social-wrapper">
+					<li class="social"><a href="https://vk.com/" target="blank" class="sprite sprite-vk">vk.com</a></li>
+					<li class="social"><a href="https://twitter.com/" target="blank" class="sprite sprite-tw">twitter.com</a></li>
+					<li class="social"><a href="https://facebook.com/" target="blank" class="sprite sprite-fb">facebook.com</a></li>
+					<li class="social"><a href="https://github.com/" target="blank" class="sprite sprite-git">github.com</a></li>
 				</ul>
 			</header>
 		</div>
+		<!-- end of header -->
 
 		<div class="main-wrapper cf">
-			<aside class="sidebar pull-left">
-				<ul class="nav">
-					<li class="nav-item"><a href="http://num-one.ru/index.html" class="nav-item-link">Обо мне</a></li>
-					<li class="nav-item active"><a href="http://num-one.ru/mypotrfolio.html" class="nav-item-link active">Мои работы</a></li>
-					<li class="nav-item"><a href="http://num-one.ru/contacts.html" class="nav-item-link">Связаться со мной</a></li>
-				</ul>
-
-				<ul class="contacts">
+			<!-- start of sidebar -->
+			<aside class="sidebar fl">
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item current"><a href="http://num-one.ru/index.html" class="nav-item-link current">Обо мне</a></li>
+						<li class="nav-item"><a href="http://num-one.ru/mypotrfolio.html" class="nav-item-link">Мои работы</a></li>
+						<li class="nav-item"><a href="http://num-one.ru/contacts.html" class="nav-item-link">Связаться со мной</a></li>
+					</ul>
+				</nav>
+				<address class="contacts">
 					<h2 class="contacts-heading">Контакты</h2>
-					<li class="email">
-						<i class="sprite sprite-email"></i>
-						<a href="" class="email-link">stass84@list.ru</a>
-					</li>
-					<li class="phone">
-						<i class="sprite sprite-phone"></i>
-						<a href="">+79213953897</a></li>
-					<li class="skype" class="phone-link">
-						<i class="sprite sprite-skype"></i>
-						<a href="" class="skype-link">nine_voices</a></li>
-					</li>
-				</ul>
+					<ul class="contacts-list">
+						<li class="email cf">
+							<i class="sprite-email fl"></i>
+							<a href="mailto:stass84@list.ru" class="email-link fl">stass84@list.ru</a>
+						</li>
+						<li class="phone cf">
+							<i class="sprite-phone fl"></i>
+							<a href="tel:+79213953897" class="phone-link fl">+79213953897</a>
+						</li>
+						<li class="skype cf">
+							<i class="sprite-skype fl"></i>
+							<a href="skype:[nine_voices]" class="skype-link fl">nine_voices</a>
+						</li>
+					</ul>
+				</address>
 			</aside>
+			<!-- end of sidebar -->
 
+			<!-- start of main -->
+			<main class="main fr">
+
+			</main>
+			<!-- end of main -->
 		</div>
 	</div>
-
+	<!-- start of footer -->
 	<div class="footer-wrapper">
-		<footer class="footer cf">
-			<i class="sprite sprite-login pull-left"></i>
-			<div class="copyright pull-right">©2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+		<footer class="footer">
+			<div class="sprite sprite-login">
+				<a href="/login.html" class="login">Войти</a>
+			</div>
+			<div class="copyright fr">©2015. Kostyl Enterprise. Это мой сайт. Пожалуйста, не копируйте и не воруйте его, пожалуйста.</div>
 		</footer>
+	<!-- end of footer -->
 	</div>
 
-
+<!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
 <script src="js/main.js"></script>

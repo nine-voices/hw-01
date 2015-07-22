@@ -2,25 +2,35 @@
 var gulp = require('gulp'),
 	prefix = require('gulp-autoprefixer'),
 	minifyCss = require('gulp-minify-css'),
-	rename = require('gulp-rename'),
-	concatCss = require('gulp-concat-css'),
-	scssCss = require('gulp-sass'),
-	slim = require('gulp-slim'),
-	spritesmith = require('gulp.spritesmith');
+	rename = require('gulp-rename');
+	// concatCss = require('gulp-concat-css'),
+	// scssCss = require('gulp-sass'),
+	// slim = require('gulp-slim'),
+	// spritesmith = require('gulp.spritesmith');
 
-// // server connect and livereload
-// gulp.task('connect', function() {
-// 	connect.server ({
-// 		root: 'Project-00',
-// 		livereload: true
-// 	})
+
+// prefixinig, minifying and renaming
+gulp.task('minify-css', function() {
+	gulp.src('src/css/main.css')
+	.pipe(prefix('last 2 versions', 'ie 8', '>.5%'))
+	.pipe(minifyCss({compatibility: 'ie8'}))
+	.pipe(rename('main.min.css'))
+	.pipe(gulp.dest('src/css'));
+});
+
+
+// default task
+gulp.task('default', ['minify-css']);
+
+
+
+
+// // watching for changes
+// gulp.task('watch', function() {
+// 	gulp.watch('scss/*.scss', ['scssCss'])
 // });
 
-// // doing nothing
-// gulp.task('html', function() {
-// 	gulp.src('index.html')
-// 	.pipe(connect.reload());
-// });
+
 
 // // compiling scss to css
 // gulp.task('scssCss', function() {
@@ -29,18 +39,3 @@ var gulp = require('gulp'),
 // 		.pipe(gulp.dest('./css'))
 // 		.pipe(connect.reload());
 // });
-
-// prefixing css
-gulp.task('prefix', function() {
-	gulp.src('css/*.css')
-		.pipe(prefix('last 2 versions', 'ie 9', '>1%'))
-		.pipe(gulp.dest('./css'))
-});
-
-// watching for changes
-gulp.task('watch', function() {
-	gulp.watch('scss/*.scss', ['scssCss'])
-});
-
-// default task
-gulp.task('default', ['connect', 'html', 'scssCss', 'watch']);
