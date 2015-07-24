@@ -4,8 +4,9 @@ src/images/favicon
 src/images/sprite_slices
 src/jade
 src/scss
-src/css/all_fira.css
-src/css/site-fonts.css
+src/readme.md
+src/css/auxiliary_css
+src/css/bundle.min.css
 src/fonts/fira
 src/fonts/Proxima-Nova
 dist

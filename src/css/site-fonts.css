@@ -1,0 +1,43 @@
+/* fonts: firasasns
+========================================*/
+
+@font-face {
+	font-family: fira-sanslight;
+	src: url(/fonts/site-fonts/firasans-light.eot);
+	src: url(/fonts/site-fonts/firasans-light.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/firasans-light.woff) format('woff'),
+		 url(/fonts/site-fonts/firasans-light.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: fira-sansbook;
+	src: url(/fonts/site-fonts/firasans-book.eot);
+	src: url(/fonts/site-fonts/firasans-book.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/firasans-book.woff) format('woff'),
+		 url(/fonts/site-fonts/firasans-book.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: fira-sansmedium;
+	src: url(/fonts/site-fonts/firasans-medium.eot);
+	src: url(/fonts/site-fonts/firasans-medium.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/firasans-medium.woff) format('woff'),
+		 url(/fonts/site-fonts/firasans-medium.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/* fonts: ProximaNova
+========================================*/
+@font-face {
+	font-family: ProximaNovaCond-Semibold;
+	src: url(/fonts/site-fonts/ProximaNovaCond-Semibold.eot);
+	src: url(/fonts/site-fonts/ProximaNovaCond-Semibold?#iefix) format('embedded-opentype');
+	font-weight: 400;
+	font-style: normal;
+}
