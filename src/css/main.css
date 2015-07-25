@@ -138,20 +138,33 @@ li {list-style: none}
 	overflow: hidden;
 }
 
-.nav-list {
-	margin: 0;
-	padding: 0;
+.navigation {
 	background-color: #eff3f7;
 }
 
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .nav-item {
-	padding:0;
+	margin: 0 10px;
 	border-top: 2px solid #3ba8c0;
 }
 
+.nav-item:first-child {border-top: none;}
+
+.nav-item.current {
+	margin: 0 0 -2px 0; /*хак*/
+	padding-left: 10px; /*хак*/
+	background: #3ba8c0;
+}
+.current .nav-item-link {color: #fff;}
+
 .nav-item-link {
 	display: block;
-	padding: 20px;
+	padding: 20px 20px;
 	font: 400 20px fira-sansbook, sans-serif;
 	color: #959aa8;
 	transition: color .5s;
@@ -159,20 +172,12 @@ li {list-style: none}
 
 .nav-item-link:hover {color: #3ba8c0;}
 
-.nav-item-link.current {
-	margin-bottom: -2px;
-	padding-left: 20px;
-	color: #fff;
-}
-
-.nav-item.current:hover {color: #fff;}
-
+.current .nav-item-link:hover {color: #fff;}
 
 
 /* contacts
 ========================================*/
-.contacts-heading,
-.nav-item.current {background-color: #3ba8c0;}
+.contacts-heading {background-color: #3ba8c0;}
 
 .contacts-heading {
 	margin: 0;

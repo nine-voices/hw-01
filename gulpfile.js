@@ -2,12 +2,10 @@
 var gulp = require('gulp'),
 	prefix = require('gulp-autoprefixer'),
 	minifyCss = require('gulp-minify-css'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
 	concatCss = require('gulp-concat-css'),
 	browserSync = require('browser-sync');
-	// scssCss = require('gulp-sass'),
-	// slim = require('gulp-slim'),
-	// spritesmith = require('gulp.spritesmith');
+	// scss = require('gulp-scss');
 
 
 // concatting
@@ -17,7 +15,7 @@ gulp.task('bundle', function() {
 	.pipe(prefix('last 2 versions', 'ie 8', '>.5%'))
 	.pipe(minifyCss({compatibility: 'ie8'}))
 	.pipe(rename('bundle.min.css'))
-	.pipe(gulp.dest('src/css/'));
+	.pipe(gulp.dest('dist/css/'));
 });
 
 // server
@@ -41,10 +39,9 @@ gulp.task('default', ['bundle', 'server']);
 
 
 
-// // compiling scss to css
-// gulp.task('scssCss', function() {
-// 	gulp.src('scss/*.scss')
-// 		.pipe(scssCss())
-// 		.pipe(gulp.dest('./css'))
-// 		.pipe(connect.reload());
+// compiling scss to css
+// gulp.task('scss', function() {
+// 	gulp.src('/src/scss/*.scss')
+// 		.pipe(scss())
+// 		.pipe(gulp.dest('src/css'));
 // });
