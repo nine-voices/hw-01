@@ -1,11 +1,12 @@
 node_modules
 src/bower
 dist
+
 src/scss
 src/jade
-src/images/favicon
-src/images/sprite_slices
-src/css/auxiliary_css
-src/css/bundle.min.css
+src/images/mess
+src/css/auxiliary
+
 src/fonts/fira
 src/fonts/Proxima-Nova
+src/fonts/Proxima-Nova-from-fs

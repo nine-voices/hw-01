@@ -1,0 +1,38 @@
+/* main: myworks
+========================================*/
+.myworks-wrapper {
+	width: 650px;
+	padding: 0 5px;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+.myworks-item {
+	width: 183px;
+	text-align: center;
+	margin: 0 15px 30px 15px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.myworks-item-thumb {
+	display: block;
+	height: 129px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.project-header {
+	margin: 0;
+}
+
+.desc, .project-header {
+	font: normal 15px fira-sanslight, sans-serif;
+	line-height: 1.3;
+}
+
+.project-link {
+	font: normal 15px fira-sanslight-italic, sans-serif;
+
+}

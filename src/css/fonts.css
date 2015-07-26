@@ -12,6 +12,16 @@
 }
 
 @font-face {
+	font-family: fira-sanslight-italic;
+	src: url(/fonts/site-fonts/firasans-lightitalic.eot);
+	src: url(/fonts/site-fonts/firasans-lightitalic.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/firasans-lightitalic.woff) format('woff'),
+		 url(/fonts/site-fonts/firasans-lightitalic.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: fira-sansbook;
 	src: url(/fonts/site-fonts/firasans-book.eot);
 	src: url(/fonts/site-fonts/firasans-book.eot?#iefix) format('embedded-opentype'),
@@ -35,9 +45,12 @@
 /* fonts: ProximaNova
 ========================================*/
 @font-face {
-	font-family: ProximaNovaCond-Semibold;
-	src: url(/fonts/site-fonts/ProximaNovaCond-Semibold.eot);
-	src: url(/fonts/site-fonts/ProximaNovaCond-Semibold?#iefix) format('embedded-opentype');
+	font-family: proximanovacond-semibold;
+	src: url(/fonts/site-fonts/proximanovacond-semibold.eot);
+	src: url(/fonts/site-fonts/proximanovacond-semibold.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/proximanovacond-semibold.woff2) format('woff2'),
+		 url(/fonts/site-fonts/proximanovacond-semibold.woff) format('woff'),
+		 url(/fonts/site-fonts/proximanovacond-semibold.ttf) format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
