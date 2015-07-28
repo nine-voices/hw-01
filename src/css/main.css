@@ -46,7 +46,7 @@ li {list-style: none}
 .header-wrapper {
 	margin-bottom: 40px;
 	background-color: #eff3f7;
-	background-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
+	bavatarackground-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-size: 100% 3px;
@@ -265,6 +265,7 @@ li {list-style: none}
 .main {
 	width: 650px;
 }
+
 .info-block {
 	background: #eff3f7;
 	padding-bottom: 20px;
@@ -290,26 +291,23 @@ li {list-style: none}
 
 .basic-info-wrapper {
 	width: 650px;
-	padding: 0 10px 0 45px;
 }
 
 .basics-item {margin-bottom: 15px;}
 
-.myface {
-	position: relative;
+.avatar-outer-wrapper {
+margin-left: 30px;
+margin-top: 30px;
+}
+
+.avatar-wrapper {
 	height: 148px;
 	width: 148px;
 	overflow: hidden;
 	border: 5px solid #32a7bc;
 	border-radius: 50%;
-	margin-top: 20px;
 }
 
-.shift {
-	position: absolute;
-	left: -30px;
-	top: -20px;
-}
 
 .key {font: 400 16px fira-sansmedium, sans-serif;}
 
