@@ -13,6 +13,7 @@
 	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/clearfix.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contacts.css">
 	<script src="bower/modernizr/modernizr.js"></script>
@@ -72,12 +73,41 @@
 
 			<!-- start of main -->
 			<main class="main fr">
-				<form action="" class="form">
-					<h2 class="form-heading">У Вас интересный проект? Напишите мне</h2>
+			
+			<main class="main-contacts"> <h2 class="form-header">У Вас интересный проект? Напишите мне</h2>
+<form class="form">
+  <div class="row cf"><div class="name-wrapper fl"><label for="name" class="label">Имя</label>
+<input type="text" id="name" placeholder="Как к Вам обращаться" class="text"/></div>
+  
+<div class="email-wrapper fr"><label for="email" class="label">Email</label>
+<input type="text" id="email" placeholder="Куда мне писать" class="text"/></div></div>
+
+<label for="message" class="label">Сообщение</label>
+<textarea name="" id="message" cols="20" rows="10" placeholder="Кратко в чем суть" class="textarea"></textarea>
+
+<label for="captcha" class="captcha-label">Введите код, указанный на картинке</label>
+  <div class="row cf">
+    <img src="http://lorempixel.com/193/78" alt="captcha" class="captcha-img fl"/>
+    <div class="input-centering fr">
+       <input type="text" id="captcha" placeholder="Введите код" class="captcha"/>
+     </div>
+  </div>
+
+  
+<div class="row cf">
+  <input type="submit" class="submit fl" value="Отправить"/>
+<input type="reset" class="reset fr" value="Очистить"/></div>
+
+</form>
+</main>
 
 
 
-				</form>
+
+
+
+
+
 			</main>
 			<!-- end of main -->
 		</div>

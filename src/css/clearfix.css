@@ -1,0 +1,14 @@
+/* cf - clearfix
+========================================*/
+
+.fl {float: left;}
+
+.fr {float: right;}
+
+.cf:after,
+.cf:before {
+	content:" ";
+	display: table;
+}
+
+.cf:after {clear: both;}

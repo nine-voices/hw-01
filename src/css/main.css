@@ -46,7 +46,7 @@ li {list-style: none}
 .header-wrapper {
 	margin-bottom: 40px;
 	background-color: #eff3f7;
-	bavatarackground-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
+	background-image: linear-gradient(to right, #e7eff3, #1c667a, #e7eff3);
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-size: 100% 3px;
@@ -424,20 +424,3 @@ margin-top: 30px;
 	padding-top: 30px;
 	margin: 0 200px;
 }
-
-
-
-/* cf - clearfix
-========================================*/
-
-.fl {float: left;}
-
-.fr {float: right;}
-
-.cf:after,
-.cf:before {
-	content:" ";
-	display: table;
-}
-
-.cf:after {clear: both;}
