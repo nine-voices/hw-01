@@ -47,8 +47,8 @@
 				<nav class="navigation">
 					<ul class="nav-list">
 						<li class="nav-item"><a href="http://num-one.ru/index.html" class="nav-item-link">Обо мне</a></li>
-						<li class="nav-item"><a href="http://num-one.ru/contacts.html" class="nav-item-link">Связаться со мной</a></li>
-						<li class="nav-item current"><a href="http://num-one.ru/mypotrfolio.html" class="nav-item-link">Мои работы</a></li>
+						<li class="nav-item"><a href="http://num-one.ru/mypotrfolio.html" class="nav-item-link">Мои работы</a></li>
+						<li class="nav-item current"><a href="http://num-one.ru/contacts.html" class="nav-item-link">Связаться со мной</a></li>
 					</ul>
 				</nav>
 				<address class="contacts">
@@ -72,44 +72,37 @@
 			<!-- end of sidebar -->
 
 			<!-- start of main -->
-			<main class="main fr">
-			
-			<main class="main-contacts"> <h2 class="form-header">У Вас интересный проект? Напишите мне</h2>
-<form class="form">
-  <div class="row cf"><div class="name-wrapper fl"><label for="name" class="label">Имя</label>
-<input type="text" id="name" placeholder="Как к Вам обращаться" class="text"/></div>
-  
-<div class="email-wrapper fr"><label for="email" class="label">Email</label>
-<input type="text" id="email" placeholder="Куда мне писать" class="text"/></div></div>
+			<main class="main-contacts fr">
+				<h2 class="form-header">У Вас интересный проект? Напишите мне</h2>
+				<form class="form">
+					<div class="row cf">
+						<div class="name-wrapper fl">
+							<label for="name" class="contacts-label">Имя</label>
+							<input type="text" id="name" placeholder="Как к Вам обращаться" class="contacts-text"/>
+						</div>
+						<div class="email-wrapper fr">
+							<label for="email" class="contacts-label">Email</label>
+							<input type="text" id="email" placeholder="Куда мне писать" class="contacts-text"/>
+						</div>
+					</div>
 
-<label for="message" class="label">Сообщение</label>
-<textarea name="" id="message" cols="20" rows="10" placeholder="Кратко в чем суть" class="textarea"></textarea>
+					<label for="message" class="contacts-label">Сообщение</label>
+					<textarea name="" id="message" cols="20" rows="10" placeholder="Кратко в чем суть" class="contacts-textarea"></textarea>
 
-<label for="captcha" class="captcha-label">Введите код, указанный на картинке</label>
-  <div class="row cf">
-    <img src="http://lorempixel.com/193/78" alt="captcha" class="captcha-img fl"/>
-    <div class="input-centering fr">
-       <input type="text" id="captcha" placeholder="Введите код" class="captcha"/>
-     </div>
-  </div>
-
-  
-<div class="row cf">
-  <input type="submit" class="submit fl" value="Отправить"/>
-<input type="reset" class="reset fr" value="Очистить"/></div>
-
-</form>
-</main>
-
-
-
-
-
-
-
-
+					<label for="captcha" class="captcha-label">Введите код, указанный на картинке</label>
+					<div class="row cf">
+						<img src="http://lorempixel.com/193/78" alt="captcha" class="captcha-img fl"/>
+						<div class="input-centering fr">
+							<input type="text" id="captcha" placeholder="Введите код" class="captcha"/>
+						</div>
+					</div>
+					<div class="row cf">
+						<button type="submit" class="btn-submit fl">Отправить</button>
+						<button type="btn-reset" class="btn-submit fr">Очистить</button>
+					</div>
+				</form>
 			</main>
-			<!-- end of main -->
+		<!-- end of main -->
 		</div>
 	</div>
 	<!-- start of footer -->
@@ -126,7 +119,5 @@
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="js/main.js"></script>
-
 </body>
 </html>

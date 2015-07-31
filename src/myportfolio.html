@@ -109,10 +109,53 @@
 							<div class="desc">3е превью. 3 строки: строка строка строка. строка строка строка. 3 строки...</div>
 						</li>
 						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/add_project.png" alt="Добавить проект"></a>
+							<a href="" class="myworks-item-thumb add-new-item" id="add-new-item"><span class="icon-add-project"></span>
+							Добавить проект</a>
 						</li>
 					</ul>
 				</section>
+				<!-- new-project-popup -->
+				<div id="new-project-popup">
+				Скоро на ваших экранах...
+					<div class="modal-wrapper">
+						<div class="modal-header">
+							<button type="button" class="b-close"></button>
+							<h3 class="modal-title">Добавление проекта</h3>
+						</div>
+						<div class="modal-body"></div>
+							<form action="add-new-project.php" id="add-new-project">
+								<div class="form-group">
+									<div class="server-mes error-mes"></div>
+									<div class="server-mes success-mes"></div>
+									<label for="projectName" class="label">Название проекта</label>
+									<input type="text" id="projectName" name="projectName" placeholder="Введите название" class="input">
+								</div>
+								<div class="form-group">
+									<div class="file-upload-wrapper" id="uploadFile">
+										<span class="label">Картинка проекта</span>
+										<label class="file-upload-label">
+											<input type="file" id="fileUpload" name="files[]" placeholder="Введите название" class="file-upload">
+											<input type="hidden" id="fileUrl" name="fileUrl">
+										</label>
+										<input id="fileName" name="fileName" placeholder="Загрузите изображение" disabled class="input">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="projectURL" class="label">URL проекта</label>
+									<input type="text" id="projectURL" name="projectURL" placeholder="Добавьте ссылку" class="input">
+								</div>
+								<div class="form-group">
+									<label for="projectDesc" class="label">Описание</label>
+									<textarea id="projectDesc" name="text" rows="3" placeholder="Пара слов о Вашем проекте" class="textarea"></textarea>
+								</div>
+								<div class="btn-wrapper">
+									<button type="submit" class="btn">Добавить</button>
+								</div>
+							</form>
+
+					</div>
+				</div>
+
 			</main>
 			<!-- end of main -->
 		</div>
@@ -131,7 +174,8 @@
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="js/main.js"></script>
+<script src="bower/bpopup/jquery.bpopup.min.js"></script>
+<script src="js/add-project.js"></script>
 
 </body>
 </html>

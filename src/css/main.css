@@ -5,7 +5,7 @@ html {height: 100%}
 
 body {
 	background: url(/images/background.png);
-	font: 400 1em fira-sanslight, sans-serif;
+	font: 400 1em fira-sans-light, sans-serif;
 }
 
 a {text-decoration: none}
@@ -165,7 +165,7 @@ li {list-style: none}
 .nav-item-link {
 	display: block;
 	padding: 20px 20px;
-	font: 400 20px fira-sansbook, sans-serif;
+	font: 400 20px fira-sans-book, sans-serif;
 	color: #959aa8;
 	transition: color .5s;
 }
@@ -182,7 +182,7 @@ li {list-style: none}
 .contacts-heading {
 	margin: 0;
 	padding-left: 30px;
-	font: 400 21px fira-sansbook, sans-serif;
+	font: 400 21px fira-sans-book, sans-serif;
 	color: #fff;
 	line-height: 40px;
 }
@@ -215,7 +215,7 @@ li {list-style: none}
 .phone-link,
 .skype-link {
 	height: 40px;
-	font: 400 18px fira-sansbook, sans-serif;
+	font: 400 18px fira-sans-book, sans-serif;
 	color: #fff;
 	line-height: 38px;
 	cursor: pointer;
@@ -274,7 +274,7 @@ li {list-style: none}
 }
 
 .info-block-heading {
-	font: 400 26px fira-sansbook, sans-serif;
+	font: 400 26px fira-sans-book, sans-serif;
 	color: #3ba8c0;
 	line-height: 78px;
 	border-bottom: 2px solid #3ba8c0;
@@ -309,10 +309,10 @@ margin-top: 30px;
 }
 
 
-.key {font: 400 16px fira-sansmedium, sans-serif;}
+.key {font: 400 16px fira-sans-medium, sans-serif;}
 
 .value {
-	font: 400 16px fira-sansbook, sans-serif;
+	font: 400 16px fira-sans-book, sans-serif;
 	margin-left: 20px;
 }
 
@@ -328,7 +328,7 @@ margin-top: 30px;
 	margin: 4px 3px;
 	border-radius: 2px;
 	background-image: linear-gradient(to top, #2e8ca2, #2e8ca2 49%, #3ba8c0 52%, #3ba8c0);
-	font: 400 15px proximanovacond-semibold, sans-serif;
+	font: 400 15px proxima-nova-cond-semibold, sans-serif;
 	color: #fff;
 	line-height: 25px;
 }
@@ -372,9 +372,9 @@ margin-top: 30px;
 	left: -65px;
 }
 
-.position {font: 400 18px fira-sansbook, sans-serif}
+.position {font: 400 18px fira-sans-book, sans-serif}
 
-.span {font: 400 18px fira-sanslight, sans-serif}
+.span {font: 400 18px fira-sans-light, sans-serif}
 
 
 
@@ -393,7 +393,7 @@ margin-top: 30px;
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
-	font: 400 14px fira-sanslight, sans-serif;
+	font: 400 14px fira-sans-light, sans-serif;
 }
 
 .login {

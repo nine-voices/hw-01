@@ -1,3 +1,87 @@
 /* main: login
 ========================================*/
+.page-wrapper {position: relative;}
+.auth-form {
+	margin-bottom: 78px;
+	width: 590px;
+	height: 486px;
+	background: #eff3f7;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px #c4c5c4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -243px 0 0 -295px;
+	box-sizing: border-box;
+}
 
+.auth-form-header {
+	position: relative;
+	padding-top: 24px;
+	padding-bottom: 26px;
+	margin: 0 0 10px;
+	font: 400 40px fira-sans-book, sans-serif;
+	color: #fff;
+	text-align: center;
+	background-color: #48cbe8;
+}
+
+.auth-form-header:after {
+	content: '';
+	position: absolute;
+	width: 590px;
+	height: 15px;
+	left: 0;
+	top:97px;
+	background: #67dffa;
+}
+
+.form-group {margin-bottom: 14px;}
+
+.login-label {
+	display: block;
+	font: normal 36px fira-sans-light, sans-serif;
+	color: #959aa8;
+	text-align: center;
+}
+
+.login-text {
+	display: block;
+	box-sizing: border-box;
+	height: 62px;
+	width: 422px;
+	padding-left: 10px;
+	margin: 0 auto;
+	border: 2px solid #48cbe8;
+	border-radius: 5px;
+	font: normal 17px fira-sans-light, sans-serif;
+}
+
+.btn-submit {
+	display: block;
+	width: 224px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid #48cbe8;
+	font: normal 30px fira-sans-book, sans-serif;
+	color: #fff;
+	background: #48cbe8; 
+	border-bottom: 5px solid #3ba8c0;
+}
+
+.btn-submit:hover {
+	border-bottom: none;
+	padding-top: 3px;
+}
+.btn-submit:active {
+	border-bottom: none;
+	border-top: 3px solid #3ba8c0;
+	padding-top: 3px;
+}
+
+input:focus,
+button:focus {outline:none;}
+
+::-webkit-button-placeholder {color: #5acee9;}

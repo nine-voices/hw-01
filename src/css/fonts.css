@@ -2,41 +2,41 @@
 ========================================*/
 
 @font-face {
-	font-family: fira-sanslight;
-	src: url(/fonts/site-fonts/firasans-light.eot);
-	src: url(/fonts/site-fonts/firasans-light.eot?#iefix) format('embedded-opentype'),
-		 url(/fonts/site-fonts/firasans-light.woff) format('woff'),
-		 url(/fonts/site-fonts/firasans-light.ttf) format('truetype');
+	font-family: fira-sans-light;
+	src: url(/fonts/site-fonts/fira-sans-light.eot);
+	src: url(/fonts/site-fonts/fira-sans-light.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/fira-sans-light.woff) format('woff'),
+		 url(/fonts/site-fonts/fira-sans-light.ttf) format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: fira-sanslight-italic;
-	src: url(/fonts/site-fonts/firasans-lightitalic.eot);
-	src: url(/fonts/site-fonts/firasans-lightitalic.eot?#iefix) format('embedded-opentype'),
-		 url(/fonts/site-fonts/firasans-lightitalic.woff) format('woff'),
-		 url(/fonts/site-fonts/firasans-lightitalic.ttf) format('truetype');
+	font-family: fira-sans-light-italic;
+	src: url(/fonts/site-fonts/fira-sans-light-italic.eot);
+	src: url(/fonts/site-fonts/fira-sans-light-italic.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/fira-sans-light-italic.woff) format('woff'),
+		 url(/fonts/site-fonts/fira-sans-light-italic.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: fira-sansbook;
-	src: url(/fonts/site-fonts/firasans-book.eot);
-	src: url(/fonts/site-fonts/firasans-book.eot?#iefix) format('embedded-opentype'),
-		 url(/fonts/site-fonts/firasans-book.woff) format('woff'),
-		 url(/fonts/site-fonts/firasans-book.ttf) format('truetype');
+	font-family: fira-sans-book;
+	src: url(/fonts/site-fonts/fira-sans-book.eot);
+	src: url(/fonts/site-fonts/fira-sans-book.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/fira-sans-book.woff) format('woff'),
+		 url(/fonts/site-fonts/fira-sans-book.ttf) format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: fira-sansmedium;
-	src: url(/fonts/site-fonts/firasans-medium.eot);
-	src: url(/fonts/site-fonts/firasans-medium.eot?#iefix) format('embedded-opentype'),
-		 url(/fonts/site-fonts/firasans-medium.woff) format('woff'),
-		 url(/fonts/site-fonts/firasans-medium.ttf) format('truetype');
+	font-family: fira-sans-medium;
+	src: url(/fonts/site-fonts/fira-sans-medium.eot);
+	src: url(/fonts/site-fonts/fira-sans-medium.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/fira-sans-medium.woff) format('woff'),
+		 url(/fonts/site-fonts/fira-sans-medium.ttf) format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -45,12 +45,12 @@
 /* fonts: ProximaNova
 ========================================*/
 @font-face {
-	font-family: proximanovacond-semibold;
-	src: url(/fonts/site-fonts/proximanovacond-semibold.eot);
-	src: url(/fonts/site-fonts/proximanovacond-semibold.eot?#iefix) format('embedded-opentype'),
-		 url(/fonts/site-fonts/proximanovacond-semibold.woff2) format('woff2'),
-		 url(/fonts/site-fonts/proximanovacond-semibold.woff) format('woff'),
-		 url(/fonts/site-fonts/proximanovacond-semibold.ttf) format('truetype');
+	font-family: proxima-nova-cond-semibold;
+	src: url(/fonts/site-fonts/proxima-nova-cond-semibold.eot);
+	src: url(/fonts/site-fonts/proxima-nova-cond-semibold.eot?#iefix) format('embedded-opentype'),
+		 url(/fonts/site-fonts/proxima-nova-cond-semibold.woff2) format('woff2'),
+		 url(/fonts/site-fonts/proxima-nova-cond-semibold.woff) format('woff'),
+		 url(/fonts/site-fonts/proxima-nova-cond-semibold.ttf) format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }

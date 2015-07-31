@@ -23,16 +23,44 @@
 	border-radius: 3px;
 }
 
-.project-header {
-	margin: 0;
-}
+.project-header {margin: 0;}
 
-.desc, .project-header {
-	font: normal 15px fira-sanslight, sans-serif;
+.desc,
+.project-header {
+	font: normal 15px fira-sans-light, sans-serif;
 	line-height: 1.3;
 }
 
 .project-link {
-	font: normal 15px fira-sanslight-italic, sans-serif;
-
+	font: normal 15px fira-sans-light-italic, sans-serif;
 }
+
+.add-new-item {
+	box-sizing: border-box;
+	border: 1px dashed #3ba8c0;
+	background: #edf8fc;
+	font: normal 13px fira-sans-light, sans-serif;
+}
+
+.icon-add-project {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 35px auto 10px;
+	background-image: url(/images/icon-add-project.png);
+}
+
+
+/* main: add project popup
+========================================*/
+#new-project-popup {
+	text-align: center;/*не забыть это убрать когда будет готово*/
+	line-height: 500px; /*не забыть это убрать когда будет готово*/
+	display: none;
+	width: 360px;
+	height: 500px;
+	background: #eff3f7;
+	border-radius: 4px;
+}
+
+.modal-wrapper {display: none;}
