@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/clearfix.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/jquery.qtip.css">
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
 
@@ -74,31 +75,31 @@
 			<!-- start of main -->
 			<main class="main-contacts fr">
 				<h2 class="form-header">У Вас интересный проект? Напишите мне</h2>
-				<form class="form">
+				<form class="form" id="contactMe">
 					<div class="row cf">
 						<div class="name-wrapper fl">
 							<label for="name" class="contacts-label">Имя</label>
-							<input type="text" id="name" placeholder="Как к Вам обращаться" class="contacts-text"/>
+							<input type="text" id="name" placeholder="Как к Вам обращаться" class="contacts-text" qtip-position="left" qtip-content="Введите Ваше имя"/>
 						</div>
 						<div class="email-wrapper fr">
 							<label for="email" class="contacts-label">Email</label>
-							<input type="text" id="email" placeholder="Куда мне писать" class="contacts-text"/>
+							<input type="text" id="email" placeholder="Куда мне писать" class="contacts-text" qtip-position="right" qtip-content="Введите адрес почты"/>
 						</div>
 					</div>
 
 					<label for="message" class="contacts-label">Сообщение</label>
-					<textarea name="" id="message" cols="20" rows="10" placeholder="Кратко в чем суть" class="contacts-textarea"></textarea>
+					<textarea name="" id="message" cols="20" rows="10" placeholder="Кратко в чем суть" class="contacts-textarea" qtip-position="left" qtip-content="Хотя бы пару слов"></textarea>
 
 					<label for="captcha" class="captcha-label">Введите код, указанный на картинке</label>
 					<div class="row cf">
 						<img src="http://lorempixel.com/193/78" alt="captcha" class="captcha-img fl"/>
 						<div class="input-centering fr">
-							<input type="text" id="captcha" placeholder="Введите код" class="captcha"/>
+							<input type="text" id="captcha" placeholder="Введите код" class="captcha" qtip-position="right" qtip-content="Введите код!"/>
 						</div>
 					</div>
 					<div class="row cf">
 						<button type="submit" class="btn-submit fl">Отправить</button>
-						<button type="btn-reset" class="btn-submit fr">Очистить</button>
+						<button type="reset" class="btn-reset fr">Очистить</button>
 					</div>
 				</form>
 			</main>
@@ -119,5 +120,8 @@
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="js/contact-me.js"></script>
+<script src="js/validation.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 </body>
 </html>

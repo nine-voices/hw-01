@@ -1,0 +1,34 @@
+"use strict";
+
+var login = (function(){
+
+	// инициализирует модуль
+	var init = function(){
+		_setupListeners();
+	};
+
+	// следит за событиями
+	var _setupListeners = function(){
+		$('form').on('submit', _submitForm)
+	};
+
+	var _submitForm = function(e){
+		console.log('отправка формы');
+		e.preventDefault();
+		var form = $(this),
+			url = 'contactMe.php',
+			defObj = _ajaxForm(form, url);
+	};
+
+	var _ajaxForm = function(form, url){
+		console.log('аякс запрос');
+		if(!validation.validateForm(form)) return false;
+	};
+
+	return {
+		init: init
+	}
+
+})();
+
+login.init();

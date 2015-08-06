@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/clearfix.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/jquery.qtip.css">
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
 
@@ -24,15 +25,15 @@
 <p class="browserhappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com">обновите</a> его.</p>
 <![endif] -->
 	<div class="page-wrapper">
-		<form class="auth-form" action="auth.php">
+		<form class="auth-form" id="auth-form">
 			<h2 class="auth-form-header">Авторизуйтесь</h2>
 			<div class="form-group">
 				<label for="login" class="login-label">Логин</label>
-				<input type="text" id="login" placeholder="Введите логин" class="login-text"/>
+				<input type="text" id="login" placeholder="Введите логин" class="login-text" qtip-position="left" qtip-content="Введите логин!"/>
 			</div>
 			<div class="form-group">
 				<label for="password" class="login-label">Пароль</label>
-				<input type="text" id="password" placeholder="Введите пароль" class="login-text"/>
+				<input type="text" id="password" placeholder="Введите пароль" class="login-text" qtip-position="left" qtip-content="Введите пароль!"/>
 			</div>
 			<button type="submit" class="btn-submit">Войти</button>
 		</form>
@@ -52,5 +53,9 @@
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="bower/qtip2/jquery.qtip.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/validation.js"></script>
+
 </body>
 </html>

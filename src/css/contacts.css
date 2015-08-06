@@ -139,3 +139,5 @@ input:focus,
 textarea:focus, button:focus {outline:none;}
 
 ::-webkit-button-placeholder {color: #5acee9;}
+
+.has-error {background: #fdd5d2; border: 1px solid red;}
