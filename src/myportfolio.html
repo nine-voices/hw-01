@@ -8,16 +8,15 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
-	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="images/favicon/favicon.ico"/>
-	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/clearfix.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/myportfolio.css">
-	<link rel="stylesheet" href="css/jquery.qtip.css">
-	<script src="bower/modernizr/modernizr.js"></script>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/clearfix.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/myportfolio.css">
+	<link rel="stylesheet" href="/css/jquery.qtip.css">
+	<script src="/bower/modernizr/modernizr.js"></script>
 </head>
 
 <body>
@@ -28,7 +27,7 @@
 		<!-- start of header -->
 		<div class="header-wrapper">
 			<header class="header">
-				<a href="http://loftschool.com/course/web-development" target="blank" class="header-logo">
+				<a href="index.html" class="header-logo">
 					<img class="logo" src="images/logo.png" alt="Loftschool.com">
 					<span class="header-logo-text">Сайт портфолио</span>
 				</a>
@@ -47,9 +46,9 @@
 			<aside class="sidebar fl">
 				<nav class="navigation">
 					<ul class="nav-list">
-						<li class="nav-item"><a href="http://num-one.ru/index.html" class="nav-item-link">Обо мне</a></li>
-						<li class="nav-item current"><a href="http://num-one.ru/mypotrfolio.html" class="nav-item-link">Мои работы</a></li>
-						<li class="nav-item"><a href="http://num-one.ru/contacts.html" class="nav-item-link">Связаться со мной</a></li>
+						<li class="nav-item"><a href="index.html" class="nav-item-link">Обо мне</a></li>
+						<li class="nav-item current"><a href="myportfolio.html" class="nav-item-link">Мои работы</a></li>
+						<li class="nav-item"><a href="contacts.html" class="nav-item-link">Связаться со мной</a></li>
 					</ul>
 				</nav>
 				<address class="contacts">
@@ -76,42 +75,69 @@
 			<main class="main fr">
 				<section class="info-block">
 					<h2 class="info-block-heading">Мои работы</h2>
-					<ul class="myworks-wrapper cf">
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/project01.png" alt="www.site.ru"></a>
+					<ul class="myworks-wrapper">
+						<li class="myworks-item">
+							<div class="myworks-item-thumb">
+								<img src="images/myportfolio_images/project01.png" alt="www.site.ru">
+								<div class="overlay">
+									<a href="" class="overlay-link">www.site.ru</a>
+								</div>
+							</div>
 							<a class="project-link" href="">www.site.ru</a>
 							<h3 class="project-header">Информация о проекте</h3>
 							<div class="desc">1е превью. 1 строка...</div>
 						</li>
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/project02.png" alt="www.site.ru"></a>
+						<li class="myworks-item">
+							<div class="myworks-item-thumb">
+								<img src="images/myportfolio_images/project02.png" alt="www.site.ru">
+								<div class="overlay">
+									<a href="" class="overlay-link">www.site.ru</a>
+								</div>
+							</div>
 							<a class="project-link" href="">www.site.ru</a>
 							<h3 class="project-header">Информация о проекте</h3>
 							<div class="desc">2е превью. 2 строки: строка строка строка. 2 строки...</div>
 						</li>
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/project03.png" alt="www.site.ru"></a>
+						<li class="myworks-item">
+							<div class="myworks-item-thumb">
+								<img src="images/myportfolio_images/project03.png" alt="www.site.ru">
+								<div class="overlay">
+									<a href="" class="overlay-link">www.site.ru</a>
+								</div>
+							</div>
 							<a class="project-link" href="">www.site.ru</a>
 							<h3 class="project-header">Информация о проекте</h3>
 							<div class="desc">3е превью. 3 строки: строка строка строка. строка строка строка. 3 строки...</div>
 						</li>
-					</ul>
-					<ul class="myworks-wrapper cf">
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/project02.png" alt="www.site.ru"></a>
+						<li class="myworks-item">
+							<div class="myworks-item-thumb">
+								<img src="/images/myportfolio_images/project02.png" alt="www.site.ru">
+								<div class="overlay">
+									<a href="" class="overlay-link">www.site.ru</a>
+								</div>
+							</div>
 							<a class="project-link" href="">www.site.ru</a>
 							<h3 class="project-header">Информация о проекте</h3>
 							<div class="desc">4е превью. 3 строки: строка строка строка. строка строка строка. 3 строки...</div>
 						</li>
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb"><img src="images/myportfolio_images/project03.png" alt="www.site.ru"></a>
+						<li class="myworks-item">
+							<div class="myworks-item-thumb">
+								<img src="images/myportfolio_images/project03.png" alt="www.site.ru">
+								<div class="overlay">
+									<a href="" class="overlay-link">www.site.ru</a>
+								</div>
+							</div>
 							<a class="project-link" href="">www.site.ru</a>
 							<h3 class="project-header">Информация о проекте</h3>
 							<div class="desc">3е превью. 3 строки: строка строка строка. строка строка строка. 3 строки...</div>
 						</li>
-						<li class="myworks-item fl">
-							<a href="" class="myworks-item-thumb add-new-item" id="add-new-item"><span class="icon-add-project"></span>
-							Добавить проект</a>
+						<li class="myworks-item">
+							<div class="myworks-item-thumb add-new-item" id="add-new-item">
+								<a href="" class="add-project-link">
+									<i class="icon-add-project"></i>
+									<span>Добавить проект</span>
+								</a>
+							</div>
 						</li>
 					</ul>
 				</section>
@@ -119,7 +145,7 @@
 				<div id="new-project-popup" >
 					<div class="modal-wrapper">
 						<div class="modal-header">
-							<button type="button" class="b-close"><img src="images/btn-close.png" alt=""></button>
+							<button type="button" class="b-close"><img src="/images/btn-close.png" alt=""></button>
 							<h3 class="modal-title">Добавление проекта</h3>
 						</div>
 						<div class="modal-body">
@@ -133,9 +159,10 @@
 								<div class="form-group">
 									<span class="label">Картинка проекта</span>
 									<label class="file-upload-label">
-										<span class="file-upload-name">Загрузите изображение</span>
-										<input type="file" id="fileUpload" class="file-upload-input" qtip-position="left" qtip-content="Загрузите изображение!">
+										<input type="file" id="fileUpload" name="files[]" class="file-upload-input">
+										<input type="hidden" id="fileUrl" name="fileUrl">
 									</label>
+									<input type="text" id="fileName" class="input" disabled qtip-position="left" qtip-content="Вы не выбрали изображение!">
 								</div>
 								<div class="form-group">
 									<label for="projectURL" class="label">URL проекта</label>
@@ -160,7 +187,7 @@
 	<div class="footer-wrapper">
 		<footer class="footer">
 			<div class="sprite sprite-login">
-				<a href="/login.html" class="login">Войти</a>
+				<a href="login.html" class="login">Войти</a>
 			</div>
 			<div class="copyright fr">©2015. Kostyl Enterprise. Это мой сайт. Пожалуйста, не копируйте и не воруйте его, пожалуйста.</div>
 		</footer>
@@ -169,11 +196,11 @@
 
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="bower/bpopup/jquery.bpopup.min.js"></script>
-<script src="bower/qtip2/jquery.qtip.min.js"></script>
-<script src="js/add-project.js"></script>
-<script src="js/validation.js"></script>
+<script>window.jQuery || document.write('<script src="/bower/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="/bower/bpopup/jquery.bpopup.min.js"></script>
+<script src="/bower/qtip2/jquery.qtip.min.js"></script>
+<script src="/js/add-project.js"></script>
+<script src="/js/validation.js"></script>
 
 </body>
 </html>

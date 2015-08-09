@@ -13,7 +13,7 @@ var login = (function(){
 	};
 
 	var _submitForm = function(e){
-		console.log('отправка формы');
+		// console.log('отправка формы');
 		e.preventDefault();
 		var form = $(this),
 			url = 'contactMe.php',
@@ -21,7 +21,7 @@ var login = (function(){
 	};
 
 	var _ajaxForm = function(form, url){
-		console.log('аякс запрос');
+		// console.log('аякс запрос');
 		if(!validation.validateForm(form)) return false;
 	};
 

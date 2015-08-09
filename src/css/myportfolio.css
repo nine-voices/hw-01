@@ -2,25 +2,28 @@
 ========================================*/
 .myworks-wrapper {
 	width: 650px;
-	padding: 0 5px;
+	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	list-style: none;
 }
 
 .myworks-item {
+	display: inline-block;
+	vertical-align: top;
 	width: 183px;
 	text-align: center;
-	margin: 0 15px 30px 15px;
+	margin: 0 15px 30px;
 	padding: 0;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .myworks-item-thumb {
-	display: block;
+	border-radius: 3px;
 	height: 129px;
 	margin-bottom: 15px;
-	border-radius: 3px;
+	overflow: hidden;
 }
 
 .project-header {margin: 0;}
@@ -39,17 +42,60 @@
 	box-sizing: border-box;
 	border: 1px dashed #3ba8c0;
 	background: #edf8fc;
-	font: normal 13px fira-sans-light, sans-serif;
+	font: normal 13px fira-sans-light, sans-serif;;
+}
+
+.add-project-link {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .icon-add-project {
 	display: block;
 	width: 32px;
 	height: 32px;
-	margin: 35px auto 10px;
 	background-image: url(/images/icon-add-project.png);
+	margin: 0 auto 10px;
 }
 
+/*overlay effect*/
+.overlay {
+	box-sizing: border-box;
+	top: 0;
+	text-align: center;
+	transition: all .35s;
+	vertical-align: middle;
+	opacity: 0;
+	border-radius: 5px;
+	width: 100%;
+	position: absolute;
+	height: 129px;
+}
+
+.overlay:before, .add-new-item:before {
+	content: '';
+	vertical-align: middle;
+	height: 100%;
+	display: inline-block;
+}
+
+.myworks-item-thumb:hover .overlay {
+	background: rgba(0,0,0,.4);
+	opacity: 1;
+}
+
+.overlay-link {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	font: normal 15px fira-sans-light, sans-serif;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 3px 8px;
+	color: #fff;
+	text-decoration: none;
+}
+/*end of overlay effect*/
 
 /* main: add project popup
 ========================================*/
@@ -63,7 +109,7 @@
 
 .b-close {
 	position: absolute;
-	background-image: url(/src/images/btn-close.png);
+	background-image: url(/images/btn-close.png);
 	width: 25px;
 	height: 25px;
 	padding: 0;
@@ -92,7 +138,7 @@
 	width: 320px;
 	margin: 0 auto;}
 
-.form-group {margin-bottom: 12px;}
+.form-group {margin-bottom: 12px;position: relative;}
 
 .server-mes {display: none;}
 
@@ -156,22 +202,14 @@
 
 .file-upload-label {
 	display: block;
-	margin-bottom: 12px;
-	position: relative;
-	height: 41px;
-	overflow: hidden;
-}
-
-.file-upload-label:after {
 	position: absolute;
-	content: '';
-	top: 1px;
+	height: 41px;
 	width: 52px;
-	background-image: url(/images/btn-add.png);
-	height: 39px;
+	background: url(../images/btn-add.png) 10px 7px no-repeat;
 	right: 0;
+	background-color: #48cbe8;
+	border-radius: 0 3px 3px 0;
 }
-
 
 .file-upload-name {
 	position: absolute;
@@ -185,18 +223,6 @@
 	height: 41px;
 	padding: 10px;
 	color: #6ad2eb;
-}
-
-.file-upload-input {
-	width: 100%;
-	font-size: 0;
-	height: 41px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	cursor: pointer;
-	z-index: 2;
 }
 
 input:focus,
@@ -232,3 +258,13 @@ textarea:focus, button:focus {outline:none;}
 .error-mes {background: #fdd5d2}
 
 .has-error {background: #fdd5d2; border: 1px solid red;}
+
+.file-upload-input {
+	width: 0;
+	height: 0;
+	border: 0;}
+
+.file-name-input {
+	width: 100%;
+	box-sizing: border-box;
+}

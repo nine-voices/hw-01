@@ -50,14 +50,15 @@ li {list-style: none}
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-size: 100% 3px;
+	min-width: 960px;
 }
 
 .header {
 	height: 111px;
 	position: relative;
-	max-width: 1200px;
-	min-width: 600px;
 	margin: 0 auto;
+	min-width: 960px;
+	max-width: 1200px;
 }
 
 .header-logo {
@@ -387,10 +388,10 @@ margin-top: 30px;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	background-size: 100% 3px;
+	min-width: 960px;
 }
 
 .footer {
-	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
 	font: 400 14px fira-sans-light, sans-serif;

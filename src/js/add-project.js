@@ -11,6 +11,16 @@ var myModule = (function(){
 	var _setupListeners = function(){
 		$('#add-new-item').on('click', _showModal) //открываем модальное окно (popup)
 		$('#add-new-project').on('submit', _addProject) //добавляем новый проект
+		$('#fileUpload').on('change', _changefileupLoad) //загружаем имя картинки
+	};
+
+	var _changefileupLoad = function(){
+			var input = $(this),
+				name = input[0].files[0].name;
+				$('#fileName')
+					.val(name)
+					.trigger('hideTooltip')
+					.removeClass('has-error');
 	};
 
 	// показывает/скрывает модальнок окно
@@ -28,6 +38,7 @@ var myModule = (function(){
 			speed: 800,
 			onClose: function(){
 				form.find('.server-mes, .input, .textarea').val('');
+				form.find('.input, .textarea').removeClass('has-error');
 				form.find('.server-mes').hide();
 				}
 		});
@@ -76,7 +87,7 @@ var myModule = (function(){
 				dataType: 'json',
 				data: data
 				}).fail(function(ans){
-					console.log("проблемы с PHP");
+					// console.log("проблемы с PHP");
 					form.find('.error-mes').text('На сервере произошла ошибка').show();
 				});
 		return result;

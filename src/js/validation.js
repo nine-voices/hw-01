@@ -18,8 +18,7 @@ var validation = (function(){
 
 	var _clearForm= function(form){
 		var form = $(this);
-		form.find('.input, .textarea').trigger('hideTooltip');
-		form.find('.has-error').removeClass('has-error');
+		form.find('.input, .textarea, .has-error').trigger('hideTooltip').removeClass('has-error');
 	};
 
 
@@ -56,7 +55,7 @@ var validation = (function(){
 			},
 			position: position,
 			style: {
-				classes: 'qtip-mystyle qtip-rounded',
+				classes: 'qtip-red qtip-rounded qtip-white-text',
 				tip: {
 					height: 10,
 					width: 16
@@ -67,13 +66,13 @@ var validation = (function(){
 
 	// проверяет форму
 	var validateForm = function(form){
-		var elements = $('form').find('input, textarea').not('input#fileUpload'),
+		var elements = $('form').find('input, textarea').not('input#fileUpload, input#fileUrl'),
 			valid = true;
-		console.log('в модуле валидации проверяю форму');
+		// console.log('в модуле валидации проверяю форму');
 
 		$.each(elements, function(index, val){
-			console.log(index);
-			console.log(val);
+			// console.log(index);
+			// console.log(val);
 			var element = $(val),
 				val = element.val(),
 				pos = element.attr('qtip-position');
