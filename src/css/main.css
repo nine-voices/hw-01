@@ -394,6 +394,7 @@ margin-top: 30px;
 }
 
 .footer {
+	width: 960px;
 	margin: 0 auto;
 	position: relative;
 	font: 400 14px fira-sans-light, sans-serif;
