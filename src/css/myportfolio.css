@@ -268,3 +268,10 @@ textarea:focus, button:focus {outline:none;}
 	width: 100%;
 	box-sizing: border-box;
 }
+
+/*overlay IE hack*/
+.no-opacity .overlay {display: none;}
+.no-opacity .myworks-item-thumb:hover .overlay {
+	display: block;
+	background-color: #4191bb;
+}

@@ -1,19 +1,38 @@
 /* main: login
 ========================================*/
-.page-wrapper {position: relative;}
+body {
+	box-sizing: border-box;
+	min-height: 600px;
+	position: relative;
+}
+
+.form-centering-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.form-centering-wrapper:before {
+	content: '';
+	display: inline-block; 
+	height: 100%;
+	vertical-align: middle;
+}
+
 .auth-form {
-	margin-bottom: 78px;
+	display: inline-block;
 	width: 590px;
 	height: 486px;
+	margin-bottom: 78px;
 	background: #eff3f7;
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 5px 10px #c4c5c4;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -243px 0 0 -295px;
 	box-sizing: border-box;
+	vertical-align: middle;
 }
 
 .auth-form-header {

@@ -41,6 +41,7 @@ li {list-style: none}
 	display: block;
 }
 
+
 /*header
 ========================================*/
 .header-wrapper {
@@ -50,7 +51,8 @@ li {list-style: none}
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-size: 100% 3px;
-	min-width: 960px;
+	min-width: 960px;
+
 }
 
 .header {
