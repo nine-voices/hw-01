@@ -95,6 +95,10 @@ var myModule = (function(){
 		return result;
 	};
 
+		// добавляем placeholder для отображения в ИЕ8
+		$('input, textarea').placeholder();
+
+
 // возвращаем объект
 return {
 	init: init

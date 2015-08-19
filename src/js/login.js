@@ -25,6 +25,9 @@ var login = (function(){
 		if(!validation.validateForm(form)) return false;
 	};
 
+		// добавляем placeholder для отображения в ИЕ8
+		$('input, textarea').placeholder();
+
 	return {
 		init: init
 	}
