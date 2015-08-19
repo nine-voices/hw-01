@@ -66,7 +66,7 @@ var validation = (function(){
 
 	// проверяет форму
 	var validateForm = function(form){
-		var elements = $('form').find('input, textarea').not('input#fileUpload, input#fileUrl'),
+		var elements = $('form').find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 			valid = true;
 		// console.log('в модуле валидации проверяю форму');
 

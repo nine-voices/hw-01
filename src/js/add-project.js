@@ -15,12 +15,15 @@ var myModule = (function(){
 	};
 
 	var _changefileupLoad = function(){
-			var input = $(this),
-				name = input[0].files[0].name;
-				$('#fileName')
-					.val(name)
-					.trigger('hideTooltip')
-					.removeClass('has-error');
+			var imgPath = $(this).val(),
+			name = imgPath.split('\\').reverse();
+			name.length = 1;
+			// console.log(name);
+			// name = input[0].files[0].name; почему-то так не работает в ие8. хотя так было у Димы.
+			$('#fileName')
+				.val(name)
+				.trigger('hideTooltip')
+				.removeClass('has-error');
 	};
 
 	// показывает/скрывает модальнок окно
@@ -35,7 +38,6 @@ var myModule = (function(){
 			speed: 650,
 			transition: 'slideIn',
 			transitionClose: 'slideBack',
-			speed: 800,
 			onClose: function(){
 				form.find('.server-mes, .input, .textarea').val('');
 				form.find('.input, .textarea').removeClass('has-error');
